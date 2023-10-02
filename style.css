@@ -1,0 +1,92 @@
+:root {
+    --content-width: 1000px;
+    --bg-gradient: linear-gradient(180deg, rgba(92, 92, 92, 0.7) 0%, rgba(53, 53, 53, 0.8) 100%);
+    --bg-gradient-alt: linear-gradient(180deg, rgba(157, 157, 157, 0.7) 0%, rgba(85, 85, 85, 0.8) 49%, rgba(57, 57, 57, 0.8) 50%, rgba(91, 91, 91, 0.8) 100%);
+    --light-purp:#dfcfff;
+    --dark-purp:#935aff;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+    color: white;
+    font-size: 17px;
+    background-image: url(https://media.discordapp.net/attachments/1116241534082371605/1140529520198291508/image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {}
+
+#content {
+    display: flex;
+    margin: 0 auto;
+    max-width: var(--content-width)
+}
+
+aside {
+    width: 30%
+}
+
+main {
+    flex-grow: 1
+}
+
+section,
+header,
+nav {
+    padding: 0.25em
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+}
+
+.prison {
+    padding: 0.75em;
+    border: 1px white solid;
+    border-radius: 0.25em;
+    background: var(--bg-gradient-alt);
+    filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px);
+}
+
+.scroll {
+    overflow: auto
+}
+
+
+/* -------------------- */
+a {
+    text-decoration:none;
+    color:var(--light-purp)
+}
+
+a:hover {
+    color:var(--dark-purp);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:768px) {
+    #content {
+        flex-wrap:wrap
+    }
+
+    aside {
+        width:100%
+    }
+}
