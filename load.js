@@ -1,3 +1,3 @@
 $(function(){
-    $("#head").load("./assets/head.html");
+    $("#head").load("https://mafoople.github.io/assets/head.html");
 });
