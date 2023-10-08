@@ -46,6 +46,12 @@ nav {
     padding: 0.25em
 }
 
+header #headimage {
+    content:url(/assets/header.png);
+    display:block;
+    margin:0 auto;
+}
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
