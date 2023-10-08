@@ -46,10 +46,15 @@ nav {
     padding: 0.25em
 }
 
-header #headimage {
+header {
+    max-width:900px;
+    margin: 0 auto
+}
+
+header #headimage{
     content:url(/assets/header.png);
     display:block;
-    margin:0 auto;
+    max-width:100%
 }
 
 nav ul {
